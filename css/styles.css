@@ -1,0 +1,97 @@
+.grid__row {
+  padding: 1em 10px;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .grid__row {
+      flex-direction: row; } }
+.grid__col--1 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--1 {
+      margin-top: 0;
+      flex-basis: 8.3333333333%; } }
+.grid__col--2 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--2 {
+      margin-top: 0;
+      flex-basis: 16.6666666667%; } }
+.grid__col--3 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--3 {
+      margin-top: 0;
+      flex-basis: 25%; } }
+.grid__col--4 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--4 {
+      margin-top: 0;
+      flex-basis: 33.3333333333%; } }
+.grid__col--5 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--5 {
+      margin-top: 0;
+      flex-basis: 41.6666666667%; } }
+.grid__col--6 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--6 {
+      margin-top: 0;
+      flex-basis: 50%; } }
+.grid__col--7 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--7 {
+      margin-top: 0;
+      flex-basis: 58.3333333333%; } }
+.grid__col--8 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--8 {
+      margin-top: 0;
+      flex-basis: 66.6666666667%; } }
+.grid__col--9 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--9 {
+      margin-top: 0;
+      flex-basis: 75%; } }
+.grid__col--10 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--10 {
+      margin-top: 0;
+      flex-basis: 83.3333333333%; } }
+.grid__col--11 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--11 {
+      margin-top: 0;
+      flex-basis: 91.6666666667%; } }
+.grid__col--12 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--12 {
+      margin-top: 0;
+      flex-basis: 100%; } }
+
+@media (min-width: 768px) {
+  [class^=grid__col] + [class^=grid__col] {
+    margin-left: 10px; } }
+
+/*# sourceMappingURL=styles.css.map */
