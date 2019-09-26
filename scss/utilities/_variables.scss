@@ -1,6 +1,9 @@
-// sass map goes here
-// $btn--default: #51ddfc;
-// $btn--success: #63cc82;
-// $btn--error: #e4757a;
-// $btn--warning: #fd7856;
-// $btn--info: #927bc1;
+$colors: (
+    'default': #51ddfc,
+    'success': #63cc82,
+    'error': #e4757a,
+    'warning': #fd7856,
+    'info': #927bc1,
+);
+
+$break-m: 768px;

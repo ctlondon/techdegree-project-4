@@ -4,11 +4,10 @@
 // **************************************
 
 
-// NOTE: import utilities and base partials here:
+@import 'base/_index.scss',
+        'utilities/_index.scss',
+        'typography/_index.scss',
+        'layout/_index.scss',
+        'components/_index.scss';
 
 
-
-// import components partials
-@import 'components';
-
-@import 'utilities';

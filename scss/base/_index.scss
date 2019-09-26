@@ -1,5 +1,7 @@
 // **************************************
 // base/_index.scss
-// used to import individual base
+// used to import base & normalize partials
 // **************************************
 
+@import '_normalize.scss',
+        '_base.scss';
