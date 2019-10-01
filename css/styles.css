@@ -303,6 +303,30 @@ template {
 [hidden] {
   display: none; }
 
+.grid__col--12.theme__colors {
+  background-color: #80e8d1; }
+.grid__col--11.theme__colors {
+  background-color: #55dabd; }
+.grid__col--10.theme__colors {
+  background-color: #55c6da; }
+.grid__col--9.theme__colors {
+  background-color: #fd8985; }
+.grid__col--8.theme__colors {
+  background-color: #fd9f85; }
+.grid__col--7.theme__colors {
+  background-color: #ec9fa3; }
+.grid__col--6.theme__colors {
+  background-color: #3fabca; }
+.grid__col--5.theme__colors {
+  background-color: #88d9a0; }
+.grid__col--4.theme__colors {
+  background-color: #7ee6fd; }
+.grid__col--3.theme__colors {
+  background-color: #deb2ee; }
+.grid__col--2.theme__colors {
+  background-color: #d392eb; }
+.grid__col--1.theme__colors {
+  background-color: #e783e2; }
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -398,5 +422,18 @@ template {
 @media (min-width: 768px) {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px; } }
+
+.btn {
+  border-radius: 8%; }
+  .btn--default.theme__colors {
+    background-color: #51ddfc; }
+  .btn--success.theme__colors {
+    background-color: #63cc82; }
+  .btn--error.theme__colors {
+    background-color: #e4757a; }
+  .btn--warning.theme__colors {
+    background-color: #fd7856; }
+  .btn--info.theme__colors {
+    background-color: #927bc1; }
 
 /*# sourceMappingURL=styles.css.map */

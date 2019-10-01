@@ -1,0 +1,5 @@
+.btn {
+    @include colors($colors);
+    @include roundy;
+}
+

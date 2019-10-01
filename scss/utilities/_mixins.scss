@@ -1,0 +1,24 @@
+// sets background colors for specified map
+@mixin colors($map) {
+    @each $item, $color in $map {
+        &#{$item}.theme__colors {
+            background-color: $color;
+        }
+    }
+}
+
+// @mixin grid-colors($map) {
+//     @each $col, $color in $map {
+//         &__#{$col}.theme__colors {
+//             background-color: $color;
+//         }
+//     }
+// }
+
+// makes buttons or rectangular blocks of color have rounded corners
+@mixin roundy($dim: null, $brdr: null) {
+    width: $dim;
+    height: $dim;
+    border: $brdr;
+    border-radius: 8%;
+}

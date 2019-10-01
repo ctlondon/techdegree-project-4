@@ -10,6 +10,9 @@
 // grid base class
 .grid {
 
+  // colors for grid
+  @include colors($grid-colors);
+
   // .grid__row
   &__row {
     padding: 1em 10px;
