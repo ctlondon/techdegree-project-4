@@ -22,3 +22,48 @@
     border: $brdr;
     border-radius: 8%;
 }
+
+// media queries
+@mixin mq($break) {
+    // declare local variable
+    $value: map-get($breakpoints, $break);
+    // declare local variable to store the sm key in the $breakpoints map
+    $sm: map-get($breakpoints, 'sm');
+
+    // output media query using max-width media feature
+    //  if the argument passed for $break is the sm key
+    //  from the $breakpoints map. will return the value 
+    //  less than sm
+    @if $value < $sm {
+        @media (max-width: $value) {
+            @content;
+        }
+    }
+    // if the value is the sm breakpoint or larger
+    //  the mixin will output the min-width media query
+    @else {
+        @media (min-width: $value) {
+            @content;
+        }        
+    }
+}
+
+// center align divs and containers
+@mixin center($w) {
+    width: $w;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// make a flex container
+@mixin flexy(
+    $disp: flex,
+    $dir: null,
+    $wrap: null,
+    $just: null,) {
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+}

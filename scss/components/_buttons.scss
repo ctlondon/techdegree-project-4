@@ -1,5 +1,19 @@
 .btn {
     @include colors($colors);
-    @include roundy;
+    &--default {
+        @extend %btn;
+    }
+    &--success {
+        @extend %btn;
+    }
+    &--error {
+        @extend %btn;
+    }
+    &--warning {
+        @extend %btn;
+    }
+    &--info {
+        @extend %btn;
+    }
 }
 

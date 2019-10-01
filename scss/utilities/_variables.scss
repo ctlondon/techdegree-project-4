@@ -1,9 +1,11 @@
+// colors for buttons and column elements
+
 $colors: (
-    '--default': #51ddfc,
-    '--success': #63cc82,
-    '--error': #e4757a,
-    '--warning': #fd7856,
-    '--info': #927bc1,
+    '--default': $default,
+    '--success': $success,
+    '--error': $error,
+    '--warning': $warning,
+    '--info': $info,
 ); 
 
 $grid-colors: (
@@ -21,4 +23,20 @@ $grid-colors: (
     '__col--1': #e783e2,
 );
 
-$break-m: 768px;
+// break points
+$breakpoints: (
+    'xs': 575px,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px
+);
+
+
+// misc. variables
+
+$max-width: 1200px;
+
+$font-small: 12px;
+$font-med: 18px;
+
+$gutter: 20px;

@@ -1,5 +1,5 @@
 // ===================================================================== 
-// Global Config
+// Global Config: sets global variables and styles
 // styles can only be applied to the following
 // four elements directly:
 // the universal selector (*), ul, p, and a
@@ -21,17 +21,22 @@ $font-weight--extra-bold    : 800;
 
 // descriptive base colors
 
-$white  : #fff;
-$black  : #0b0b0b;
-$grey   : #797e83;
+$white       : #fff;
+$black       : #0b0b0b;
+$grey        : #797e83;
 
-$viking : #58e1c1;
-$malibu : #51ddfc;
+$viking      : #58e1c1;
+
+$default     : #51ddfc;
+$success     : #63cc82;
+$error       : #e4757a;
+$warning     : #fd7856;
+$info        : #927bc1;
 
 // color usage
 
 $color-primary      : $viking;
-$color-secondary    : $malibu;
+$color-secondary    : $default;
 $color-accent       : complement($color-primary);
 $color-shadow       : rgba($black, .2);
 
@@ -39,3 +44,8 @@ $color-shadow       : rgba($black, .2);
 
 $base__font-size    : 16px;
 $base__line         : 24px;
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

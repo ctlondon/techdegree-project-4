@@ -20,7 +20,11 @@
     flex-direction: column;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    // @media (min-width: 768px) {
+    //   flex-direction: row;
+    // }
+
+    @include mq('md') {
       flex-direction: row;
     }
   }
@@ -41,12 +45,18 @@
         // from the  media query
         margin-top: 10px;
         flex-basis: 100%;
+        
+        &.theme__colors {
+          @extend %rounded;
+        }
+        
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include mq('md') {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
+          text-align: center;
 
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100 + "%"} ;
@@ -62,7 +72,11 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    // @media (min-width: 768px) {
+    //   margin-left: 10px;
+    // }
+
+    @include mq('md') {
 
       // add grid gutter
       margin-left: 10px;

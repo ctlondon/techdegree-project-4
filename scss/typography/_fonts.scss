@@ -1,0 +1,40 @@
+.container {
+    font-size: $base__font-size;
+    line-height: ($base__line/$base__font-size);
+    font-family: $font-family--primary;
+}
+
+p {
+    text-align: left;
+    color: $grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: $color-secondary;
+    font-weight: $font-weight--semi-bold;
+    text-decoration: none;
+    &:hover {
+        color: $color-accent;
+    }
+    &:visited {
+        color: $info;
+    }
+}
+
+.headline {
+    &--primary {
+        text-align: left;
+        color: $color-primary;
+        padding-left: em(12px);
+    }
+    &--secondary {
+        text-align: left;
+        color: $grey;
+        font-size: $font-med;
+        font-weight: $font-weight--light;
+    }
+}

@@ -7,4 +7,5 @@
 @import '_grid.scss';
 
 // NOTE: import other layout partials here:
-@import '_navigation.scss';
+@import '_navigation.scss',
+        '_containers.scss';

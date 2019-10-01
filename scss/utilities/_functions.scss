@@ -1,0 +1,27 @@
+
+
+// import if Google Fonts URL is defined
+
+@if variable-exists(font-url--google) {
+    @import url($font-url--google);
+}
+
+// calculate em values
+@function em($target, $context: $base__font-size) {
+    @return ($target / $context) * 1em;
+}
+
+// flexbox layout, subtracts total gutter value of each 
+// line based on number of items per line, returns percentage value to use for flex-basis 
+@function per-line($items) {
+    // converts gutter value to flexible percentage value
+    // multiplied by 2 to get the combined gutter value of both the left and right side
+    $g-pct: px-to-pc($gutter) * 2;
+
+    // get the totlal value of each row or flex-line
+    $g-total: $items * $g-pct;
+
+    // return value to use as flex-basis
+    // divides total available width by the number of items per line
+    @return (100% / $items) - $g-total;
+}
