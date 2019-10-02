@@ -18,6 +18,14 @@
     @include center(100%);
 }
 
+.card {
+    max-width: 90%;
+}
+
+p {
+    margin-bottom: em(48px);
+}
+
 // .grid__col--12 .theme__colors {
 //     @include flexy($dir: row);
 //     flex: 1 per-line(5);

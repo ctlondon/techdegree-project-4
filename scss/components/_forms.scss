@@ -1,0 +1,21 @@
+.form {
+    margin: 0 auto;
+
+    & label {
+        display: none;
+    }
+    & input {
+        display: block;
+        margin: em(24px) auto;
+        width: 100%;
+        padding: em(12px);
+        border: none;
+        border-bottom: $color-primary solid 5px;
+        &:focus {
+            outline: none;
+        }
+    }
+    & .btn--default {
+        width: 100%;
+    }
+}
