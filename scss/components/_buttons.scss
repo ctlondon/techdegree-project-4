@@ -15,5 +15,12 @@
     &--info {
         @extend %btn;
     }
+    
+}
+
+@include mq('md') {
+    .grid__col--12 [class^=btn--] + [class^=btn--]{
+        margin-left: 30px;
+    }
 }
 

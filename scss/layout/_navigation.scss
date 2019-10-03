@@ -1,9 +1,29 @@
 .nav {
-    margin: 0 auto;
+    margin: em(24px) auto;
     &__item:hover {
         background-color: $color-primary;
+        border-radius: 0.35em;
     }
     & li {
-        display: inline-block;
+        display: block;
+        text-align: center;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        @include mq('md') {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+    & a {
+        font-weight: $font-weight--light;
+        &:hover {
+            font-weight: $font-weight--bold;
+            color: white;
+        }
     }
 }
+
+ul {
+    list-style-type: none;
+}
+
