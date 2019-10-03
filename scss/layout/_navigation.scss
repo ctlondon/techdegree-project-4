@@ -14,7 +14,7 @@
             margin: 0 10px;
         }
     }
-    & a {
+    &__item:hover > a {
         font-weight: $font-weight--light;
         &:hover {
             font-weight: $font-weight--bold;
