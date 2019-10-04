@@ -555,10 +555,13 @@ ul {
   margin-right: auto; }
 
 .card {
-  max-width: 90%; }
+  max-width: 90%;
+  margin: 0 auto; }
 
 p {
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  margin-right: auto;
+  margin-left: auto; }
 
 .btn--default.theme__colors {
   background-color: #51ddfc; }

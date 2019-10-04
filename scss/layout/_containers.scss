@@ -20,10 +20,13 @@
 
 .card {
     max-width: 90%;
+    margin: 0 auto;
 }
 
 p {
     margin-bottom: em(48px);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 // .grid__col--12 .theme__colors {
