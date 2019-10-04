@@ -1,4 +1,8 @@
 .nav {
+    @include flexy (
+        $dir: column,
+        $wrap: nowrap,
+        $just: space-evenly);
     margin: em(24px) auto;
     &__item:hover {
         background-color: $color-primary;
@@ -20,7 +24,13 @@
         &:hover a {
             color: white;
             font-weight: $font-weight--bold;
-          } 
+        } 
+    }
+    @include mq('md') {
+        @include flexy (
+        $dir: row,
+        $wrap: wrap,
+        $just: space-evenly);
     }
 }
 

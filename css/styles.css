@@ -504,6 +504,10 @@ a {
     margin-left: 10px; } }
 
 .nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
   margin: 1.5em auto; }
   .nav__item:hover {
     background-color: #58e1c1;
@@ -523,6 +527,12 @@ a {
     .nav li:hover a {
       color: white;
       font-weight: 700; }
+  @media (min-width: 768px) {
+    .nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly; } }
 
 ul {
   list-style-type: none; }
