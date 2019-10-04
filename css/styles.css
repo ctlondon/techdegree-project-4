@@ -517,11 +517,12 @@ a {
       .nav li {
         display: inline-block;
         margin: 0 10px; } }
-  .nav a {
-    font-weight: 300; }
-    .nav a:hover {
-      font-weight: 700;
-      color: white; }
+    .nav li a {
+      font-weight: 300;
+      color: #797e83; }
+    .nav li:hover a {
+      color: white;
+      font-weight: 700; }
 
 ul {
   list-style-type: none; }

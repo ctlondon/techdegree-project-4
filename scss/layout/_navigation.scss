@@ -13,13 +13,14 @@
             display: inline-block;
             margin: 0 10px;
         }
-    }
-    &__item:hover > a {
-        font-weight: $font-weight--light;
-        &:hover {
-            font-weight: $font-weight--bold;
-            color: white;
+        & a {
+            font-weight: $font-weight--light;
+            color: $grey;
         }
+        &:hover a {
+            color: white;
+            font-weight: $font-weight--bold;
+          } 
     }
 }
 
