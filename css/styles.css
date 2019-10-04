@@ -319,7 +319,8 @@ template {
   text-transform: uppercase;
   padding: 1em 5%;
   border-radius: 0.35em;
-  border: none; }
+  border: none;
+  margin-bottom: 30px; }
 
 .grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
   color: #797e83;
@@ -573,6 +574,16 @@ p {
   background-color: #fd7856; }
 .btn--info.theme__colors {
   background-color: #927bc1; }
+
+.grid__col--12 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly; }
+  @media (min-width: 768px) {
+    .grid__col--12 {
+      display: flex;
+      flex-direction: row; } }
 
 @media (min-width: 768px) {
   .grid__col--12 [class^=btn--] + [class^=btn--] {
