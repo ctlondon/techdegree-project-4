@@ -4,23 +4,6 @@
     font-family: $font-family--primary;
 }
 
-p {
-    text-align: left;
-    color: $grey;
-}
-
-a {
-    color: $color-secondary;
-    font-weight: $font-weight--semi-bold;
-    text-decoration: none;
-    &:hover {
-        color: $color-accent;
-    }
-    &:visited {
-        color: $info;
-    }
-}
-
 .headline {
     &--primary {
         text-align: left;
