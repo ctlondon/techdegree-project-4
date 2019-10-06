@@ -1,0 +1,14 @@
+.img {
+    &--frame {
+        margin: 0 auto;
+        width: 90%;
+        outline: $light-grey solid .75px;
+        outline-offset: 10px;
+    }
+    &--logo {
+        margin: 0 auto;
+    }
+    &--avatar {
+        margin: 0 auto;
+    }
+}

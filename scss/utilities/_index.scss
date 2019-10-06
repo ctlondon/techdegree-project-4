@@ -1,0 +1,10 @@
+// **************************************
+// utilities/_index.scss
+// used to import mixins, placeholders, 
+// and variables partials
+// **************************************
+
+@import '_variables.scss',
+        '_placeholders.scss',
+        '_mixins.scss',
+        '_functions.scss';

@@ -1,0 +1,11 @@
+// **************************************
+// components/_index.scss
+// used to import grid & layout partials
+// **************************************
+
+// import the grid partial
+@import '_grid.scss';
+
+// NOTE: import other layout partials here:
+@import '_navigation.scss',
+        '_containers.scss';

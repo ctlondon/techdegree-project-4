@@ -1,0 +1,43 @@
+.btn {
+    @include colors($colors);
+    &--default {
+        @extend %btn;
+        
+    }
+    &--success {
+        @extend %btn;
+        
+    }
+    &--error {
+        @extend %btn;
+        
+    }
+    &--warning {
+        @extend %btn;
+        
+    }
+    &--info {
+        @extend %btn;
+        
+    }
+    
+}
+
+.grid__col--12 {
+    @include flexy(
+        $dir: column,
+        $wrap: nowrap,
+        $just: space-evenly,);
+    @include mq('md') {
+        @include flexy(
+        $dir: row);
+    }
+}
+
+
+@include mq('md') {
+    .grid__col--12 [class^=btn--] + [class^=btn--]{
+        margin-left: 30px;
+    }
+}
+

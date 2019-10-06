@@ -1,0 +1,54 @@
+// ===================================================================== 
+// Global Config: sets global variables and styles
+// styles can only be applied to the following
+// four elements directly:
+// the universal selector (*), ul, p, and a
+// =====================================================================
+
+// font stacks
+
+$font-url--google           : 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap';
+
+$font-family--primary       : 'Open Sans', Helvetica, Arial, sans-serif;
+
+// font weights
+
+$font-weight--light         : 300;
+$font-weight--regular       : 400;
+$font-weight--semi-bold     : 600;
+$font-weight--bold          : 700;
+$font-weight--extra-bold    : 800;
+
+// descriptive base colors
+
+$white       : #fff;
+$black       : #0b0b0b;
+$grey        : #797e83;
+
+$viking      : #58e1c1;
+
+$default     : #51ddfc;
+$success     : #63cc82;
+$error       : #e4757a;
+$warning     : #fd7856;
+$info        : #927bc1;
+
+// color usage
+
+$color-primary      : $viking;
+$color-secondary    : $default;
+$color-accent       : complement($color-primary);
+$color-shadow       : rgba($black, .2);
+
+// text
+
+$base__font-size    : 16px;
+$base__line         : 24px;
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &:focus {
+        outline: none;
+    }
+}

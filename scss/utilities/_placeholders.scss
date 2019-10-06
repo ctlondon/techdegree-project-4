@@ -1,0 +1,25 @@
+%btn {
+    color: $white;
+    display: inline-block;
+    font-weight: bold;
+    font-size: $font-small;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em 5%;
+    border-radius: 0.35em;
+    border: none;
+    margin-bottom: 30px;
+}
+
+%btn-col {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+%rounded {
+    color: $grey;
+    padding: 1em 1em;
+    border-radius: 0.35em;
+    border: none;
+    font-size: $font-small;
+}

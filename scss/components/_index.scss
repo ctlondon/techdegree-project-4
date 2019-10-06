@@ -1,0 +1,9 @@
+// **************************************
+// components/_index.scss
+// used to import grid & components partials
+// **************************************
+
+
+@import '_buttons.scss',
+        '_forms.scss',
+        '_images.scss';

@@ -1,0 +1,35 @@
+// .container {
+//     padding: em(12px) em(36px);
+//     @include mq('md') {
+//         padding: em(48px) em(125px);
+//     }
+// }
+
+.container {
+    @include center(80%);
+    padding: em(12px) 0;
+    @include mq('md') {
+        max-width: $max-width;
+        padding: em(48px) 0;
+    }
+}
+
+.centered {
+    @include center(100%);
+}
+
+.card {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    margin-bottom: em(48px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// .grid__col--12 .theme__colors {
+//     @include flexy($dir: row);
+//     flex: 1 per-line(5);
+// }

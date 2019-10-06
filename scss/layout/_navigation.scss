@@ -1,0 +1,40 @@
+.nav {
+    @include flexy (
+        $dir: column,
+        $wrap: nowrap,
+        $just: space-evenly);
+    margin: em(24px) auto;
+    &__item:hover {
+        background-color: $color-primary;
+        border-radius: 0.35em;
+    }
+    & li {
+        display: block;
+        text-align: center;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        @include mq('md') {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        & a {
+            font-weight: $font-weight--light;
+            color: $grey;
+        }
+        &:hover a {
+            color: white;
+            font-weight: $font-weight--bold;
+        } 
+    }
+    @include mq('md') {
+        @include flexy (
+        $dir: row,
+        $wrap: wrap,
+        $just: space-evenly);
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+

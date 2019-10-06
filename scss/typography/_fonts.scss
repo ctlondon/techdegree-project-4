@@ -1,0 +1,51 @@
+.container {
+    font-size: $base__font-size;
+    line-height: ($base__line/$base__font-size);
+    font-family: $font-family--primary;
+}
+
+p {
+    text-align: left;
+    color: $grey;
+}
+
+a {
+    color: $color-secondary;
+    font-weight: $font-weight--semi-bold;
+    text-decoration: none;
+    &:hover {
+        color: $color-accent;
+    }
+    &:visited {
+        color: $info;
+    }
+}
+
+.headline {
+    &--primary {
+        text-align: left;
+        color: $color-primary;
+        padding-left: em(12px);
+        margin-top: 0;
+    }
+    &--secondary {
+        text-align: left;
+        color: $grey;
+        font-size: $font-med;
+        font-weight: $font-weight--light;
+        margin-top: em(24px);
+        margin-bottom: em(24px);
+    }
+}
+
+.blockquote {
+    margin-left: em(24px);
+    border-left: $color-primary solid 10px;
+    border-radius: 0.35em;
+    padding: 0 20px;
+    color: $grey;
+    font-size: $font-lg;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.2;
+}

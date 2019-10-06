@@ -1,0 +1,45 @@
+// colors for buttons and column elements
+
+$colors: (
+    '--default': $default,
+    '--success': $success,
+    '--error': $error,
+    '--warning': $warning,
+    '--info': $info,
+); 
+
+$grid-colors: (
+    '__col--12': #80e8d1,
+    '__col--11': #55dabd,
+    '__col--10': #55c6da,
+    '__col--9': #fd8985,
+    '__col--8': #fd9f85,
+    '__col--7': #ec9fa3,
+    '__col--6': #3fabca,
+    '__col--5': #88d9a0,
+    '__col--4': #7ee6fd,
+    '__col--3': #deb2ee,
+    '__col--2': #d392eb,
+    '__col--1': #e783e2,
+);
+
+// break points
+$breakpoints: (
+    'xs': 575px,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px
+);
+
+
+// misc. variables
+
+$max-width: 1200px;
+
+$font-small: 12px;
+$font-med: 18px;
+$font-lg: 22px;
+
+$gutter: 20px;
+
+$light-grey: #cacaca;
