@@ -23,30 +23,7 @@
     border-radius: 8%;
 }
 
-// media queries
-@mixin mq($break) {
-    // declare local variable
-    $value: map-get($breakpoints, $break);
-    // declare local variable to store the sm key in the $breakpoints map
-    $sm: map-get($breakpoints, 'sm');
 
-    // output media query using max-width media feature
-    //  if the argument passed for $break is the sm key
-    //  from the $breakpoints map. will return the value 
-    //  less than sm
-    @if $value < $sm {
-        @media (max-width: $value) {
-            @content;
-        }
-    }
-    // if the value is the sm breakpoint or larger
-    //  the mixin will output the min-width media query
-    @else {
-        @media (min-width: $value) {
-            @content;
-        }        
-    }
-}
 
 // center align divs and containers
 @mixin center($w) {
@@ -67,3 +44,39 @@
     flex-wrap: $wrap;
     justify-content: $just;
 }
+
+// media queries
+
+@mixin mq($break) {
+    @if $break == 'md' {
+        @media (min-width: map-get($breakpoints, 'md')) {
+            @content;
+        }
+    }
+}
+
+
+
+// @mixin mq($break) {
+//     // declare local variable
+//     $value: map-get($breakpoints, $break);
+//     // declare local variable to store the sm key in the $breakpoints map
+//     $sm: map-get($breakpoints, 'sm');
+
+//     // output media query using max-width media feature
+//     //  if the argument passed for $break is the sm key
+//     //  from the $breakpoints map. will return the value 
+//     //  less than sm
+//     @if $value < $sm {
+//         @media (max-width: $value) {
+//             @content;
+//         }
+//     }
+//     // if the value is the sm breakpoint or larger
+//     //  the mixin will output the min-width media query
+//     @else {
+//         @media (min-width: $value) {
+//             @content;
+//         }        
+//     }
+// }
